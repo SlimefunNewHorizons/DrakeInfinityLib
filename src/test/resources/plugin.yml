@@ -1,6 +1,6 @@
 name: MockAddon
 version: Testing
-main: io.github.mooy1.infinitylib.core.MockAddon
+main: dev.drake.infinitylib.core.MockAddon
 depend: [Slimefun]
 
 commands:
