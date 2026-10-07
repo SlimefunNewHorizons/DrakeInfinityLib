@@ -18,7 +18,7 @@ import org.mockbukkit.mockbukkit.MockBukkit;
 import org.mockbukkit.mockbukkit.ServerMock;
 import org.mockbukkit.mockbukkit.world.WorldMock;
 import org.mockbukkit.mockbukkit.persistence.PersistentDataContainerMock;
-import com.github.drakescraft_labs.slimefun4.implementation.SlimefunItems;
+import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

@@ -1,6 +1,6 @@
 package dev.drake.infinitylib.presets;
 
-import com.github.drakescraft_labs.slimefun4.utils.LoreBuilder;
+import io.github.thebusybiscuit.slimefun4.utils.LoreBuilder;
 import org.bukkit.ChatColor;
 
 /**

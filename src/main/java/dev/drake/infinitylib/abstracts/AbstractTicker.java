@@ -1,16 +1,16 @@
 package dev.drake.infinitylib.abstracts;
 
-import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
-import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
-import com.github.drakescraft_labs.slimefun4.core.attributes.NotHopperable;
-import com.github.drakescraft_labs.slimefun4.core.networks.energy.EnergyNetComponentType;
-import com.github.drakescraft_labs.slimefun4.core.attributes.EnergyNetComponent;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun4.core.attributes.NotHopperable;
+import io.github.thebusybiscuit.slimefun4.core.networks.energy.EnergyNetComponentType;
+import io.github.thebusybiscuit.slimefun4.core.attributes.EnergyNetComponent;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
-import com.github.drakescraft_labs.slimefun4.legacy.api.inventory.BlockMenu;
-import com.github.drakescraft_labs.slimefun4.legacy.api.inventory.BlockMenuPreset;
-import com.github.drakescraft_labs.slimefun4.legacy.Objects.handlers.BlockTicker;
+import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
+import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
+import me.mrCookieSlime.Slimefun.Objects.handlers.BlockTicker;
 import org.bukkit.block.Block;
 import org.bukkit.inventory.ItemStack;
 
@@ -27,7 +27,7 @@ public abstract class AbstractTicker extends SlimefunItem {
         addItemHandler(new BlockTicker() {
             @Override
             public void tick(Block b, SlimefunItem item, Config config) {
-                BlockMenu menu = com.github.drakescraft_labs.slimefun4.legacy.api.BlockStorage.getInventory(b);
+                BlockMenu menu = me.mrCookieSlime.Slimefun.api.BlockStorage.getInventory(b);
                 if (menu != null) {
                     AbstractTicker.this.tick(menu, b, config);
                 }
@@ -42,7 +42,7 @@ public abstract class AbstractTicker extends SlimefunItem {
 
     @Override
     public void postRegister() {
-        new com.github.drakescraft_labs.slimefun4.legacy.api.inventory.BlockMenuPreset(getId(), getItemName()) {
+        new me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset(getId(), getItemName()) {
             @Override
             public void init() {
                 setupMenu(this);
@@ -59,12 +59,12 @@ public abstract class AbstractTicker extends SlimefunItem {
             }
 
             @Override
-            public int[] getSlotsAccessedByItemTransport(com.github.drakescraft_labs.slimefun4.legacy.api.item_transport.ItemTransportFlow flow) {
+            public int[] getSlotsAccessedByItemTransport(me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow flow) {
                 return new int[0];
             }
 
             @Override
-            public int[] getSlotsAccessedByItemTransport(com.github.drakescraft_labs.slimefun4.legacy.api.inventory.DirtyChestMenu menu, com.github.drakescraft_labs.slimefun4.legacy.api.item_transport.ItemTransportFlow flow, ItemStack item) {
+            public int[] getSlotsAccessedByItemTransport(me.mrCookieSlime.Slimefun.api.inventory.DirtyChestMenu menu, me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow flow, ItemStack item) {
                 return AbstractTicker.this.getTransportSlots(menu, flow, item);
             }
         };
@@ -76,7 +76,7 @@ public abstract class AbstractTicker extends SlimefunItem {
 
     public void onNewInstance(@Nonnull BlockMenu menu, @Nonnull Block b) {}
 
-    public int[] getTransportSlots(@Nonnull com.github.drakescraft_labs.slimefun4.legacy.api.inventory.DirtyChestMenu menu, @Nonnull com.github.drakescraft_labs.slimefun4.legacy.api.item_transport.ItemTransportFlow flow, ItemStack item) {
+    public int[] getTransportSlots(@Nonnull me.mrCookieSlime.Slimefun.api.inventory.DirtyChestMenu menu, @Nonnull me.mrCookieSlime.Slimefun.api.item_transport.ItemTransportFlow flow, ItemStack item) {
         return new int[0];
     }
 }

@@ -11,7 +11,7 @@ import lombok.Getter;
 import org.bukkit.inventory.ItemStack;
 
 import dev.drake.infinitylib.core.AbstractAddon;
-import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 
 public final class MachineRecipeType extends RecipeType {
 

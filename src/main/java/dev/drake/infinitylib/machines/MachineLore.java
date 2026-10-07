@@ -6,7 +6,7 @@ import javax.annotation.Nonnull;
 
 import lombok.experimental.UtilityClass;
 
-import com.github.drakescraft_labs.slimefun4.implementation.Slimefun;
+import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 
 /**
  * Collection of common for building item lore

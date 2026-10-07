@@ -6,9 +6,9 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
 import dev.drake.infinitylib.common.StackUtils;
-import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.items.ItemStackSnapshot;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.items.ItemUtils;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.ItemStackSnapshot;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.ItemUtils;
 
 @Getter
 public final class CraftingBlockRecipe {
