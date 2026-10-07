@@ -1,0 +1,32 @@
+package dev.drake.infinitylib.groups;
+
+import javax.annotation.ParametersAreNonnullByDefault;
+
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
+
+import dev.drake.infinitylib.core.AbstractAddon;
+import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
+
+/**
+ * A category that is hidden from the main guide page
+ *
+ * @author Mooy1
+ */
+@ParametersAreNonnullByDefault
+public final class SubGroup extends ItemGroup {
+
+    public SubGroup(String key, ItemStack item) {
+        this(key, item, 3);
+    }
+
+    public SubGroup(String key, ItemStack item, int tier) {
+        super(AbstractAddon.createKey(key), item, tier);
+    }
+
+    @Override
+    public boolean isHidden(Player p) {
+        return true;
+    }
+
+}
