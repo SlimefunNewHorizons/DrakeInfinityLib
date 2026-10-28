@@ -1,32 +1,32 @@
 # InfinityLib - Slimefun 6 (Drake Framework Port)
 ### *A shaded library for 1.21.11 Expansion Addons*
 
-Este componente ha sido portado y optimizado como parte del ecosistema **Slimefun 6** dentro del **Drake Framework**.
+This component has been ported and optimized as part of the **Slimefun 6** ecosystem within the **Drake Framework**.
 
 ---
 
-## 🤝 Créditos y Autoría
-- **Autor Original**: [Mooy1](https://github.com/Mooy1)
-- **Port a 1.21.11 (fork Drake):** [DrakesCraft-Labs](https://github.com/SlimefunNewHorizons)
+## 🤝 Credits and Authorship
+- **Original Author**: [Mooy1](https://github.com/Mooy1)
+- **Port to 1.21.11 (Drake fork):** [DrakesCraft-Labs](https://github.com/SlimefunNewHorizons)
 
 ---
 
-## Origen y estado
+## Origin and status
 
-- Fuente extraída de `drakes-slimefun-labs` (`sources/batch-2-expansion/InfinityLib`), archivo de solo
-  lectura. Este repo es ahora la fuente canónica del artefacto
-  `com.github.drakescraft_labs:infinitylib-drake` (paquete `dev.drake.infinitylib`), que sombrean
-  InfinityExpansion, Gastronomicon, FoxyMachines, CrystamaeHistoria, SimpleUtils y Supreme.
-- No confundir con `InfinityLib-Drake` (paquete `io.github.mooy1.infinitylib`, otra variante).
-- `main` — **1.21.11 / Java 21**: `1.3.11-DRAKE-SNAPSHOT` contra el core propietario
-  `slimefun-core 11.0-Drake-1.21.11-SNAPSHOT` (el que usa producción).
-- `port-26x` — **26.x / Java 25**: `1.3.11-UNIVERSAL-26x-SNAPSHOT` contra el core universal
-  `11.0-Universal-26.x-SNAPSHOT` (`io.github.thebusybiscuit.slimefun4.*`). Versión distinta a propósito
-  para no pisar el artefacto 1.21.11 en `~/.m2`.
-- Ambos cores se resuelven desde <https://maven.drakescraft.cl> (GitHub Pages de `SlimefunNewHorizons/maven-repo`);
-  la línea 26.x usa además `dough-core 1.3.1-Universal-26.x-SNAPSHOT`.
-- Tests: 6 clases heredadas de upstream están excluidas en `pom.xml` porque nunca llegaron a ejecutarse
-  y fallan o se cuelgan con MockBukkit 4.x; el resto de la suite sí corre.
+- Source extracted from `drakes-slimefun-labs` (`sources/batch-2-expansion/InfinityLib`), a read-only
+  archive. This repo is now the canonical source of the artifact
+  `com.github.drakescraft_labs:infinitylib-drake` (package `dev.drake.infinitylib`), which is shaded by
+  InfinityExpansion, Gastronomicon, FoxyMachines, CrystamaeHistoria, SimpleUtils and Supreme.
+- Not to be confused with `InfinityLib-Drake` (package `io.github.mooy1.infinitylib`, a different variant).
+- `main` — **1.21.11 / Java 21**: `1.3.11-DRAKE-SNAPSHOT` against the proprietary core
+  `slimefun-core 11.0-Drake-1.21.11-SNAPSHOT` (the one used by production).
+- `port-26x` — **26.x / Java 25**: `1.3.11-UNIVERSAL-26x-SNAPSHOT` against the universal core
+  `11.0-Universal-26.x-SNAPSHOT` (`io.github.thebusybiscuit.slimefun4.*`). The version differs on purpose
+  so it does not overwrite the 1.21.11 artifact in `~/.m2`.
+- Both cores are resolved from <https://maven.drakescraft.cl> (GitHub Pages of `SlimefunNewHorizons/maven-repo`);
+  the 26.x line also uses `dough-core 1.3.1-Universal-26.x-SNAPSHOT`.
+- Tests: 6 classes inherited from upstream are excluded in `pom.xml` because they never ran
+  and fail or hang with MockBukkit 4.x; the rest of the suite does run.
 
 ---
 
@@ -141,8 +141,8 @@ Make sure you don't call `super.onEnable/Disable`.
 Your updater and config setup is now handled, make sure to test that it's working though!
 
 <!-- DRAKES-STATUS:BEGIN -->
-> Estado de sincronizacion: **2026-04-24**.
-> Baseline tecnico vigente: **Paper 1.21.1 + Java 21**.
-> CI principal en `main`: **Gates 1-5 en verde**.
-> Nota: el monorepo completo sigue en migracion incremental por lotes.
+> Sync status: **2026-04-24**.
+> Current technical baseline: **Paper 1.21.1 + Java 21**.
+> Main CI on `main`: **Gates 1-5 green**.
+> Note: the full monorepo is still being migrated incrementally in batches.
 <!-- DRAKES-STATUS:END -->
