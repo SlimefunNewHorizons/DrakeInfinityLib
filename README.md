@@ -23,6 +23,8 @@ Este componente ha sido portado y optimizado como parte del ecosistema **Slimefu
 - `port-26x` — **26.x / Java 25**: `1.3.11-UNIVERSAL-26x-SNAPSHOT` contra el core universal
   `11.0-Universal-26.x-SNAPSHOT` (`io.github.thebusybiscuit.slimefun4.*`). Versión distinta a propósito
   para no pisar el artefacto 1.21.11 en `~/.m2`.
+- Ambos cores se resuelven desde <https://maven.drakescraft.cl> (GitHub Pages de `SlimefunNewHorizons/maven-repo`);
+  la línea 26.x usa además `dough-core 1.3.1-Universal-26.x-SNAPSHOT`.
 - Tests: 6 clases heredadas de upstream están excluidas en `pom.xml` porque nunca llegaron a ejecutarse
   y fallan o se cuelgan con MockBukkit 4.x; el resto de la suite sí corre.
 
