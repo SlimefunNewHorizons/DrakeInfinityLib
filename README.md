@@ -7,7 +7,7 @@ This component has been ported and optimized as part of the **Slimefun 6** ecosy
 
 ## 🤝 Credits and Authorship
 - **Original Author**: [Mooy1](https://github.com/Mooy1)
-- **Port to 1.21.11 (Drake fork):** [DrakesCraft-Labs](https://github.com/SlimefunNewHorizons)
+- **Port to 1.21.11 (Drake fork):** [SlimefunNewHorizons](https://github.com/SlimefunNewHorizons)
 
 ---
 
